@@ -87,6 +87,8 @@
       <AdditionalIncludeDirectories>..;$(ProjectDir)\..\Eigen;$(ProjectDir)\..\glog\src\windows;include;$(ProjectDir)\..\ceres-solver\internal;$(ProjectDir)\..\ceres-solver\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;CERES_USING_STATIC_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -101,6 +103,8 @@
       <PreprocessorDefinitions>DEBUG;CERES_USING_STATIC_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>false</OpenMPSupport>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -117,6 +121,7 @@
       <PreprocessorDefinitions>NDEBUG;CERES_USING_STATIC_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -135,6 +140,7 @@
       <PreprocessorDefinitions>NDEBUG;CERES_USING_STATIC_LIBRARY;GOOGLE_GLOG_DLL_DECL=;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
